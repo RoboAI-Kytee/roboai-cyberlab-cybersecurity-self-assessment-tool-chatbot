@@ -2,6 +2,10 @@
 
 Aute est excepteur minim ut non laborum proident qui culpa non. Veniam nisi sunt elit id. Aute non reprehenderit consequat cupidatat aliquip minim enim officia. Incididunt proident nulla ipsum duis est ullamco aliqua reprehenderit dolor nisi. Irure consequat minim elit esse cupidatat officia deserunt ex adipisicing irure ipsum reprehenderit pariatur officia. Ipsum do labore non qui cupidatat. Nostrud pariatur ipsum ex aute duis ullamco veniam.
 
+### License
+
+This repository is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
 ### Sponsors and Collaboration
 
 This project was carried out in collaboration with [Satakunta University of Applied Sciences](https://www.samk.fi), [RoboAI](https://www.roboai.fi), and the [Kytee – Kyberturvaa Satakunnan teollisuuteen](https://www.roboai.fi/tutkimus-ja-tuotekehitys/projektit/kytee/).
