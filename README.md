@@ -4,9 +4,7 @@ Aute est excepteur minim ut non laborum proident qui culpa non. Veniam nisi sunt
 
 ### Sponsors and Collaboration
 
-This project was carried out in collaboration with Satakunta University of Applied Sciences, RoboAI, and the Kytee – Kyberturvaa Satakunnan teollisuuteen -project.
-
-[Learn more about the project.](https://www.roboai.fi/tutkimus-ja-tuotekehitys/projektit/kytee/)
+This project was carried out in collaboration with [Satakunta University of Applied Sciences](https://www.samk.fi), [RoboAI](https://www.roboai.fi), and the [Kytee – Kyberturvaa Satakunnan teollisuuteen -project](https://www.roboai.fi/tutkimus-ja-tuotekehitys/projektit/kytee/).
 
 #### The Kytee project is funded and supported by
 
