@@ -4,33 +4,40 @@
 The project is responses by integrating various AI models, including Claude, OpenAI, using Retrieve-and-Generate (RAG) methodologies. 
 <img width="683" alt="image" src="https://github.com/user-attachments/assets/4456a7ab-8aca-4498-86eb-3ab511e0eb1c" />
 
-Key Components:
-API Layer (api/):
+## Key Components:
+### API Layer (api/):
 The fastAPI.py file serves as the entry point for interacting with the system. It provides an API route to retrieve answers from different AI models. For example, the /getAnswerFromClaudeHaiku endpoint processes user queries by invoking the Claude Haiku model and returns the response.
 
-Models (models/):
+### Models (models/):
 This directory contains scripts for specific AI models:
 claude_haiku.py: Uses the Claude Haiku model to respond to user queries.
 claude_sonnet.py: Uses the Claude Sonnet model for similar purposes.
 openAIAssistant_4o.py and openAIAssistant_4omini.py: Interfaces with OpenAI’s assistant models, leveraging the openai-4o and openai-4o-mini models to handle user input.
 
-Handlers (handlers/):
+### Handlers (handlers/):
 The handlers directory includes utility scripts that perform various operations, such as creating assistants, storing vector data, updating assistant instructions, and managing the configuration:
+
 assistant_4o_handler.py & assistant_4o_mini_handler.py: These scripts are responsible for creating and managing OpenAI assistants using the respective models, and they store assistant IDs in a configuration file (config.yml).
+
 vector_store_handler.py: Creates and manages a vector store used by OpenAI models to perform RAG-based querying.
+
 update_assistant_instructions.py: Updates the system prompts for OpenAI assistants based on a configuration file (sys_prompt.txt).
+
 sys_prompt_handler.py: Handles the system prompt logic, reading from sys_prompt.txt or returning a default system prompt.
+
 create_rag_chain.py: Sets up the RAG chain that integrates the Claude models with the vector store for generating relevant answers.
+
 list_all_documents.py: Lists all PDF documents that are used for creating vector databases or vector stores.
 
-Database (database/):
+### Database (database/):
 The init_chroma.py script creates a local Chroma database, which is used by Claude models to access data stored in vector format. This local database supports the retrieval and generation functionality for Claude-based queries.
 
-Configuration (config/):
+### Configuration (config/):
 config.yml: Stores configuration details for the application, such as paths for PDF storage, model selection, and other important parameters.
 sys_prompt.txt: Contains the system prompt used by OpenAI assistants or other models to maintain a consistent interaction context.
 
-Dependencies (requirements.txt): Lists the external dependencies needed to run the system, ensuring that the project environment is correctly configured for seamless execution.
+### Dependencies (requirements.txt): 
+Lists the external dependencies needed to run the system, ensuring that the project environment is correctly configured for seamless execution.
 
 ```mermaid
 flowchart TD
