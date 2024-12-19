@@ -1,6 +1,21 @@
 # RoboAI Cyberlab Cybersecurity Self-Assessment Tool Chatbot
 
 # Introduction
+---
+config:
+  layout: elk
+---
+flowchart TD
+    A["FastAPI: fastAPI.py"] --> B(["OpenAI Assistant 4o:"]) & C(["OpenAI Assistant 4o mini:"]) & D(["Claude Haiku:"]) & E(["Claude Sonnet:"])
+    G["update_assistant_instructions"] -- change the system prompt --> B & C
+    F["sys_prompt_handle"] --> D & E
+    H["list_all_document"] -- return all pdf --> B & C & D & E
+    I["event_handler"] --> B & C
+    J["create_rag_chain"] --> D & E & D & E
+    A@{ shape: rounded}
+    F@{ shape: rounded}
+    I@{ shape: rounded}
+    J@{ shape: rounded}
 
 # **Environment**
 
