@@ -1,0 +1,36 @@
+{
+    auto_https off # Disable HTTPS for local development
+}
+
+(validate_messages_input) {
+    @not_post {
+        not method POST
+    }
+
+    handle @not_post {
+        respond 400 {
+            body `{"error": "Method not allowed. Only POST requests are accepted"}`
+            close
+        }
+    }
+
+    # Validate Content-Type header
+    @invalid_content_type {
+        not header Content-Type application/json
+    }
+
+    handle @invalid_content_type {
+        respond 400 {
+            body `{"error": "Content-Type must be application/json"}`
+            close
+        }
+    }
+}
+
+:8080 {
+    import validate_messages_input
+
+    reverse_proxy api:3000 {
+        lb_policy round_robin
+    }
+}
