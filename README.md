@@ -240,7 +240,7 @@ export ANTHROPIC_API_KEY="YOUR_CLAUDE_API_KEY_HERE"
 ```
 
 Then, run the following commands to test the Claude models:
-
+The first time use will generate vector db, so it will be slower
 1. For the **Claude Haiku** model:
     
     ```bash
