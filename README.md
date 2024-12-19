@@ -77,7 +77,8 @@ You have two options to create one:
     ```
     
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/26700ee8-f908-4362-aeac-3164972347d8/9fe77368-c8b3-4f86-8447-d769a0f82ce5/image.png)
+![image](https://github.com/user-attachments/assets/23f08c26-8945-433a-895e-9037673dacc2)
+
 
 # Creating an OpenAI Assistant with the GPT-4o Model
 
@@ -129,7 +130,8 @@ You have two options to create one:
 
 ---
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/26700ee8-f908-4362-aeac-3164972347d8/0b96d31b-b52d-4e82-b3f9-3475df4aff2e/image.png)
+![image](https://github.com/user-attachments/assets/949afa8e-6269-484d-81a1-e0558543c1e6)
+
 
 # Creating an OpenAI Assistant with the GPT-4o-Mini Model
 
@@ -250,7 +252,8 @@ Once the server is running, the Jupyter link and API address will be available i
 
 - **API Address**: `http://ailab2.samk.fi:2567`
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/26700ee8-f908-4362-aeac-3164972347d8/874d8e2c-6b81-4573-b16a-2e03e6042411/image.png)
+![image](https://github.com/user-attachments/assets/5ce73390-3ab0-487d-aadd-7a0f6f311588)
+
 
 ## **If Using Your Computer**
 
