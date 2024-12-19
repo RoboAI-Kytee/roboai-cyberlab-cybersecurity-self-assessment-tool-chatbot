@@ -78,7 +78,7 @@ You have two options to create one:
     Ensure that the `OPENAI_API_KEY` environment variable is set before running the command.
     
     ```bash
-    python3 vector_store_handler.py
+    python3 -m handlers.vector_store_handler
     ```
     
 3. The vector store ID will be generated and saved automatically in the `config.yml` file.
@@ -124,7 +124,7 @@ You have two options to create one:
 1. Run the following command to create an assistant with the GPT-4o model:
     
     ```bash
-    python3 assistant_4o_handler.py
+    python3 -m handlers.assistant_4o_handler
     ```
     
 2. The assistant will use `sys_prompt.txt` as the system instructions.
@@ -157,11 +157,6 @@ You have two options to create one:
 
 # Creating an OpenAI Assistant with the GPT-4o-Mini Model
 
-```c
-openAIAssistant:
-  assistant_id_4o_mini: your_openai_4o_mini_assistant_id_here
-```
-
 ## If You Already Have an Assistant with the GPT-4o-Mini Model
 
 Update the `config.yml` file with your assistant ID:
@@ -182,7 +177,7 @@ You have two options to create one:
 1. Run the following command to create an assistant with the GPT-4o-Mini model:
     
     ```bash
-    python3 assistant_4o_mini_handler.py
+    python3 -m handlers.assistant_4o_mini_handler
     ```
     
 2. Ensure that the `OPENAI_API_KEY` environment variable is set before running the command.
@@ -211,13 +206,13 @@ You have two options to create one:
 Run the following commands to test the OpenAI Assistant models:
 
 ```bash
-python3 openAIAssistant_4o.py
+python3 -m models.openAIAssistant_4o
 ```
 
 For testing the GPT-4o-Mini model:
 
 ```bash
-python3 openAIAssistant_4omini.py
+python3 -m models.openAIAssistant_4omini
 ```
 
 After running the code, the generated answer from the model will appear in the terminal.
@@ -247,13 +242,13 @@ The first time use will generate vector db, so it will be slower
 1. For the **Claude Haiku** model:
     
     ```bash
-    python3 claude_haiku.py
+    python3 -m models.claude_haiku
     ```
     
 2. For the **Claude Sonnet** model:
     
     ```bash
-    python3 claude_sonnet.py
+    python3 -m models.claude_sonnet
     ```
     
 
@@ -264,9 +259,7 @@ The first time use will generate vector db, so it will be slower
 Run the following command to start the API using FastAPI on the server:
 
 ```bash
-bash
-Copy code
-screen -S api_screen -d -m uvicorn fastAPI:app --reload --port 8888 --host "0.0.0.0"
+screen -S api_screen -d -m uvicorn api.fastAPI:app --reload --port 8888 --host "0.0.0.0"
 
 ```
 
