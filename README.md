@@ -1,22 +1,26 @@
 # RoboAI Cyberlab Cybersecurity Self-Assessment Tool Chatbot
 
 # Introduction
----
-config:
-  layout: elk
----
 flowchart TD
-    A["FastAPI: fastAPI.py"] --> B(["OpenAI Assistant 4o:"]) & C(["OpenAI Assistant 4o mini:"]) & D(["Claude Haiku:"]) & E(["Claude Sonnet:"])
-    G["update_assistant_instructions"] -- change the system prompt --> B & C
-    F["sys_prompt_handle"] --> D & E
-    H["list_all_document"] -- return all pdf --> B & C & D & E
-    I["event_handler"] --> B & C
-    J["create_rag_chain"] --> D & E & D & E
-    A@{ shape: rounded}
-    F@{ shape: rounded}
-    I@{ shape: rounded}
-    J@{ shape: rounded}
-
+    A[FastAPI: fastAPI.py] --> B(OpenAI Assistant 4o: )
+    A --> C(OpenAI Assistant 4o mini: )
+    A --> D(Claude Haiku: )
+    A --> E(Claude Sonnet: )
+    G[update_assistant_instructions] --> |change the system prompt |B
+    G[update_assistant_instructions] --> |change the system prompt |C
+    F[sys_prompt_handle] --> D(Claude Haiku: )
+    F[sys_prompt_handle] --> E(Claude Haiku: )
+    H[list_all_document] --> |return all pdf|B
+    H[list_all_document] --> |return all pdf|C
+    H[list_all_document] --> |return all pdf|D
+    H[list_all_document] --> |return all pdf|E
+    I[event_handler] --> B(OpenAI Assistant 4o: )
+    I[event_handler] --> C(OpenAI Assistant 4o mini: )
+    J[innit_chroma] --> D(Claude Haiku: )
+    J[innit_chroma] --> E(Claude Sonnet: )
+    J[create_rag_chain] --> D(Claude Haiku: )
+    J[create_rag_chain] --> E(Claude Sonnet: )
+    
 # **Environment**
 
 1. **Create a virtual environment** and install the required packages:
