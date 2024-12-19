@@ -189,13 +189,13 @@ You have two options to create one:
 Run the following commands to test the OpenAI Assistant models:
 
 ```bash
-python3 openAIAssistant_4o_final.py
+python3 openAIAssistant_4o.py
 ```
 
 For testing the GPT-4o-Mini model:
 
 ```bash
-python3 openAIAssistant_4omini_final.py
+python3 openAIAssistant_4omini.py
 ```
 
 After running the code, the generated answer from the model will appear in the terminal.
@@ -225,13 +225,13 @@ Then, run the following commands to test the Claude models:
 1. For the **Claude Haiku** model:
     
     ```bash
-    python3 claude_haiku_final.py
+    python3 claude_haiku.py
     ```
     
 2. For the **Claude Sonnet** model:
     
     ```bash
-    python3 claude_sonnet_final.py
+    python3 claude_sonnet.py
     ```
     
 
