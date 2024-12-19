@@ -1,6 +1,8 @@
 # RoboAI Cyberlab Cybersecurity Self-Assessment Tool Chatbot
 
 # Introduction
+
+```mermaid
 flowchart TD
     A[FastAPI: fastAPI.py] --> B(OpenAI Assistant 4o: )
     A --> C(OpenAI Assistant 4o mini: )
@@ -20,6 +22,7 @@ flowchart TD
     J[innit_chroma] --> E(Claude Sonnet: )
     J[create_rag_chain] --> D(Claude Haiku: )
     J[create_rag_chain] --> E(Claude Sonnet: )
+```
     
 # **Environment**
 
