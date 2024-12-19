@@ -10,8 +10,11 @@ The fastAPI.py file serves as the entry point for interacting with the system. I
 
 ### Models (models/):
 This directory contains scripts for specific AI models:
+
 claude_haiku.py: Uses the Claude Haiku model to respond to user queries.
+
 claude_sonnet.py: Uses the Claude Sonnet model for similar purposes.
+
 openAIAssistant_4o.py and openAIAssistant_4omini.py: Interfaces with OpenAI’s assistant models, leveraging the openai-4o and openai-4o-mini models to handle user input.
 
 ### Handlers (handlers/):
@@ -30,10 +33,11 @@ create_rag_chain.py: Sets up the RAG chain that integrates the Claude models wit
 list_all_documents.py: Lists all PDF documents that are used for creating vector databases or vector stores.
 
 ### Database (database/):
-The init_chroma.py script creates a local Chroma database, which is used by Claude models to access data stored in vector format. This local database supports the retrieval and generation functionality for Claude-based queries.
+init_chroma.py: creates a local Chroma database, which is used by Claude models to access data stored in vector format. This local database supports the retrieval and generation functionality for Claude-based queries.
 
 ### Configuration (config/):
 config.yml: Stores configuration details for the application, such as paths for PDF storage, model selection, and other important parameters.
+
 sys_prompt.txt: Contains the system prompt used by OpenAI assistants or other models to maintain a consistent interaction context.
 
 ### Dependencies (requirements.txt): 
