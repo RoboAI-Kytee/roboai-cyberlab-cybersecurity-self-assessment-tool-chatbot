@@ -2,27 +2,7 @@
 
 # Introduction
 The project is responses by integrating various AI models, including Claude, OpenAI, using Retrieve-and-Generate (RAG) methodologies. 
-├── api/                   # For API-related code
-│   ├── fastAPI.py
-├── models/                # For model-specific logic
-│   ├── claude_haiku.py
-│   ├── claude_sonnet.py
-│   ├── openAIAssistant_4o.py
-│   ├── openAIAssistant_4omini.py
-├── handlers/              # For utilities and helper functions
-│   ├── assistant_4o_handler.py
-│   ├── assistant_4o_mini_handler.py
-│   ├── vector_store_handler.py
-│   ├── update_assistant_instructions.py
-│   ├── sys_prompt_handler.py
-│   ├── create_rag_chain.py
-│   ├── list_all_documents.py
-├── database/              # For database and storage-related code
-│   ├── init_chroma.py
-├── config/                # For configuration and static files
-│   ├── config.yml
-│   ├── sys_prompt.txt
-├── requirements.txt       # Dependency list
+<img width="683" alt="image" src="https://github.com/user-attachments/assets/4456a7ab-8aca-4498-86eb-3ab511e0eb1c" />
 
 Key Components:
 API Layer (api/):
