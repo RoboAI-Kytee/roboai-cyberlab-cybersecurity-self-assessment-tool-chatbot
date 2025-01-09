@@ -1,3 +1,7 @@
+```
+! THIS REPO IS FOR AI PROJECT PUBLIC DOCUMENTATION (FOR PUBLIC)
+```
+
 # RoboAI Cyberlab Cybersecurity Self-Assessment Tool Chatbot
 
 # Introduction
